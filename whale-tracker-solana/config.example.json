@@ -1,0 +1,28 @@
+{
+  "whale_tracker": {
+    "initial_wallets": [],
+    "telegram": {
+      "bot_token": "",
+      "chat_id": ""
+    },
+    "rpc_endpoints": {
+      "solana": "https://api.mainnet-beta.solana.com",
+      "solana_ws": "wss://api.mainnet-beta.solana.com",
+      "pumpfun_api": "https://frontend-api.pump.fun"
+    },
+    "monitoring": {
+      "check_interval_seconds": 10,
+      "max_tracked_wallets": 50,
+      "min_sol_for_rotation": 10.0,
+      "notify_on_buy": true,
+      "notify_on_sell": false,
+      "notify_on_wallet_rotation": true
+    },
+    "filters": {
+      "platforms": ["all"],
+      "min_sol_amount": 0.1,
+      "ignore_tokens": [],
+      "focus_memecoins": false
+    }
+  }
+}

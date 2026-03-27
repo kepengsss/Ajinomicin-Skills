@@ -1,0 +1,9 @@
+{
+  "version": "1.0.0",
+  "name": "whale-tracker-solana",
+  "description": "Solana Whale Tracker with auto wallet rotation detection",
+  "author": "Flux AI Assistant",
+  "license": "MIT",
+  "created": "2026-03-27",
+  "updated": "2026-03-27"
+}

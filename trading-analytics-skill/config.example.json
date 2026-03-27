@@ -1,0 +1,37 @@
+{
+  "symbols": ["BTC", "ETH", "SOL", "DOGE", "SHIB", "PEPE"],
+  "telegram": {
+    "bot_token": "",
+    "chat_id": ""
+  },
+  "api_endpoints": {
+    "coingecko": "https://api.coingecko.com/api/v3",
+    "binance": "https://api.binance.com/api/v3",
+    "mexc": "https://api.mexc.com/api/v3"
+  },
+  "analysis": {
+    "check_interval": 60,
+    "report_interval": 3600,
+    "price_change_threshold": 5.0,
+    "volume_threshold": 2.0,
+    "williams_period": 14,
+    "rsi_period": 14,
+    "macd_periods": [12, 26, 9]
+  },
+  "alert_types": {
+    "enabled": ["price_breakout", "technical_indicator", "portfolio_performance"],
+    "price_breakout": 5.0,
+    "technical_williams": [-80, -20],
+    "technical_rsi": [30, 70]
+  },
+  "portfolio_integration": {
+    "enabled": false,
+    "trading_bot_api": "http://localhost:8000",
+    "metrics": ["win_rate", "profit_factor", "active_positions"]
+  },
+  "logging": {
+    "level": "INFO",
+    "file": "trading_analytics.log",
+    "telegram_errors": true
+  }
+}
